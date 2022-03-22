@@ -1,0 +1,67 @@
+###
+POST http://localhost:3000/api/auth/registrar
+Content-Type: application/json
+
+{
+    "username": "asdhsda",
+    "email":"ssaaaghsaaad@gmail.com",
+    "password":"123456"
+}
+
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "asdhsda",
+    "email":"ssaaaghsaaad@gmail.com",
+    "pass":"123456"
+}
+
+
+###
+GET http://localhost:3000/api/topics
+
+###
+POST http://localhost:3000/api/topics
+Content-Type: application/json
+
+{
+    "user_id": "61fb0b6cb4afca94f0df7570",
+    "topic":"lengua",
+    "questions":[{
+        "title":"que es un adjetivo?",
+        "descripcion":"es la palabra que muestran caracteristicas"
+        },{
+        "title":"que es un sustantivo?",
+        "descripcion":"es la palabra que muestran cosas" 
+        }
+        ]   
+}
+
+
+###
+GET http://localhost:3000/api/topics/61f9d77307cc3ddf165b0fab
+
+
+
+###
+PUT http://localhost:3000/api/topics
+Content-Type: application/json
+
+{
+    "user_id": "61fb0b6cb4afca94f0df7570",
+    "topic":"lengua",
+    "questions":[{
+        "title":"que es un adjetivo?",
+        "descripcion":"es la palabra que muestran caracteristicas"
+        },{
+        "title":"que es un sustantivo?",
+        "descripcion":"es la palabra que muestran cosas" 
+        },{
+        "title":"que es un pasdasdas?",
+        "descripcion":"es la palabra qasdasdasdaadsaue muestran cosas" 
+        }
+        ]   
+}
