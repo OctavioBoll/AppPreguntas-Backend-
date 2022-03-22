@@ -17,9 +17,10 @@ require("dotenv").config()
 const app = express()
 createRoles();
 
-
+const PORT = process.env.PORT || 3000
 //indicar el puerto
-app.set('port', process.env.PORT || 3000);
+
+app.set('port', PORT);
 //console.log("En el puerto " + process.env.PORT)
 
 //configuraciones para cors morgan json 
