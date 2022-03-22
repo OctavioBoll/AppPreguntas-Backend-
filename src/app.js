@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000
 //indicar el puerto
 
 app.set('port', PORT);
-//console.log("En el puerto " + process.env.PORT)
+console.log("En el puerto " + PORT)
 
 //configuraciones para cors morgan json 
 app.use(cors())
